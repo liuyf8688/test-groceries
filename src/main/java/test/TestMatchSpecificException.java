@@ -4,7 +4,7 @@ public class TestMatchSpecificException {
 
 	public static void main(String[] args) {
 		
-		// Should be matched the more specific exception
+		// Should match the more specific exception
 		try {
 			int i = 10 / 0;
 			System.out.println(i);
