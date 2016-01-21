@@ -54,7 +54,8 @@ public class MongoJackModule extends Module {
         return "Object ID Module";
     }
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public Version version() {
         return new Version(1, 0, 0, null);
     }

@@ -4,6 +4,7 @@ import java.lang.reflect.Field;
 
 import sun.misc.Unsafe;
 
+@SuppressWarnings("restriction")
 public class TestUnsafe {
 
 	public static void main(String[] args) throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
