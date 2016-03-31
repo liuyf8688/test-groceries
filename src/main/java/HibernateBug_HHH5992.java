@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
-public class TestJdbc {
+public class HibernateBug_HHH5992 {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		
@@ -14,7 +14,7 @@ public class TestJdbc {
 		ResultSet rs = null;
 		
 		// TRIGGER HIBERNATE BUG: HHH-5992, already fixed in 4.0.0.CR7.
-		// 该BUG引发的思考，在编写SQL时，养成为字段名或表名取别名的习惯，非常非常重要.
+		// 璇UG寮曞彂鐨勬�濊�冿紝鍦ㄧ紪鍐橲QL鏃讹紝鍏绘垚涓哄瓧娈靛悕鎴栬〃鍚嶅彇鍒悕鐨勪範鎯紝闈炲父闈炲父閲嶈.
 		try {
 			String url = "jdbc:mysql://127.0.0.1:3306/liuyf_test?useUnicode=true&amp;characterEncoding=utf8";
 			String user = "liuyf";
